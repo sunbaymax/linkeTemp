@@ -1,0 +1,284 @@
+//商品列表通用样式： 默认 grid
+
+.product-wrapper {
+  // margin-top: 20px;
+  // margin-bottom: 40px;
+  // border: $product_grid_border;
+  // overflow: auto;
+
+  // outline: $header_cart_content_border;
+  background-color: #fff;
+  @include transition(all .3s ease-out);
+
+
+  &:hover {
+      // @include transition(all 0.2s ease-in);
+      // outline: 1px solid $main_color;
+     @include box-shadow(0,7px,16px,#dcdcdc)
+  }
+  // &:hover {
+  //   color:$main_color;
+  // }
+  //=================> 图片样式
+  .product-image {
+      position: relative;
+      // padding: 10px;
+      text-align: center;
+      //图片上按钮
+      // &:before{
+      //   content: "\f06e";
+      //   color: #fff;
+      //   width: 60px;
+      //   height: 25px;
+      //   top:50%;
+      //   margin-left: -30px;
+      //   position: absolute;
+      //   background-color: #000;
+      //   @include border-radius(15px);
+      //   visibility: hidden;
+      //   @include transition(all .3s ease-out);
+      // }
+      @media (min-width: 767px)
+      {
+          //float: left;
+          //padding: 0 15px;
+      }
+      a {
+          display: block;
+      }
+      img {
+          margin-right: auto;
+          margin-left: auto;
+      }
+      button {
+          line-height: 23px;
+          position: absolute;
+          top: 10px;
+          display: none;
+          border: 1px solid $main_color;
+          border-radius: 23px;
+          background-color: $main_color;
+          box-shadow: 0;
+          @media(max-width: 767px)
+          {
+              display: block;
+          }
+          &.add-to-cart {
+              left: 10px;
+          }
+          &.wishlist {
+              right: 10px;
+          }
+          &:hover {
+              opacity: .8;
+          }
+          i {
+              color: #fff;
+          }
+      }
+      &:hover button {
+          display: block;
+      }
+  }
+  //=========================> 图片下面产品信息价格功能按钮等
+  .product-info {
+      padding: 15px 10px;
+      //=============> 产品名称
+      .product-name {
+          overflow: hidden;
+          height: 20px;
+          margin-bottom: 8px;
+          a {
+              font-size: 15px;
+              weight: 400;
+              color: $product_name_color;
+              &:hover {
+                  color: $product_name_color_hover;
+              }
+          }
+      }
+      //=============> ps alter
+      .flash-sole {
+        a{
+          font-size: 16px;
+        }
+      }
+      //=============> 产品描述
+      .product-description {
+          display: none;
+      }
+      //=============> 产品价格
+      .product-price {
+          margin-bottom: 10px;
+          // padding: 0 15px;
+          .price-new {
+              font-size: 16px;
+              font-weight: 600;
+              color: $product_price_color;
+          }
+          .ps-color {
+            color: #e60012;
+          }
+          .price-old {
+              font-size: 14px;
+              text-decoration: line-through;
+          }
+          button {
+              font-size: 12px;
+              float: right;
+              margin: 10px 0;
+              padding: 4px 8px;
+              color: #fff;
+              border: 1px solid $secondary_color;
+              background-color: $secondary_color;
+              &:hover {
+                  color: $product_grid_btn_color_hover;
+                  border-color: $product_grid_btn_border_color_hover;
+                  background-color: $product_grid_btn_bg_color_hover;
+              }
+          }
+          .price-tax {
+              display: block;
+          }
+      }
+      //=============> 星星
+      .product-rating {
+        position: relative;
+        padding-bottom: 19px;
+        &:before {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 100px;
+          top: 28px;
+          left: 0px;
+          background: #ddd;
+        }
+        span {
+          width: 1em;
+          font-size: 12px;
+          width: 12px;
+          height: 16px;
+          i {
+            color: #f7bc3d;
+            height: 11px;
+            line-height: 11px;
+            // background-color: #f7bc3d;
+          }
+        }
+      }
+      //=============> 加入购物车/收藏/对比 按钮
+      .product-action {
+          // visibility: hidden;
+          // position: absolute;
+        button {
+            font-size: 12px;
+            margin: 2px 0;
+            padding: 3px 8px;
+            border: 1px solid $product_grid_btn_border_color;
+            background-color: transparent;
+            &:hover {
+                color: $product_grid_btn_color_hover;
+                border-color: $product_grid_btn_border_color_hover;
+                background-color: $product_grid_btn_bg_color_hover;
+            }
+        }
+        .add-to-cart{
+          background-color: $main_color;
+          color: #fff;
+          @include transition(all .2s ease-out);
+          &:hover{
+            background-color: #000;
+            border: 1px solid  #000;
+          }
+        }
+        .ps-add-buyincang{
+          visibility: hidden;
+          float: right;
+          // margin-left: 10px;
+          button{
+              border: 1px solid #c2c2c2;
+              background-color: transparent;
+              color: #555;
+
+              &:hover {
+                  color: $product_grid_btn_color_hover;
+                  border-color: $product_grid_btn_border_color_hover;
+                  background-color: $product_grid_btn_bg_color_hover;
+                  @include transition(all .2s ease-out);
+              }
+          }
+          &:hover{
+            visibility: visible;
+          }
+        }
+      }
+  }
+}
+// 单独提出鼠标移入效果
+.product-wrapper:hover #btn-visible{
+  visibility: visible;
+}
+// .product-wrapper:hover .product-image{
+//   opacity: .8;
+//   @include transition(all .3s ease-out);
+// }
+// .product-wrapper:hover .product-image:before{
+//   visibility: visible;
+// }
+// 分别设置 grid 样式
+.product-grid {
+  margin-bottom: 20px;
+  &:hover
+  {
+      .product-wrapper
+      {
+          border-color: $product_grid_border_color_hover;
+          // .product-info {
+          //   background-color: $product_grid_product_info_bg_color_hover;
+          // }
+      }
+  }
+  .product-action {
+      .wishlist,
+      .compare {
+          span {
+              @media (min-width: 768px) and (max-width: 1220px)
+              {
+                  display: none;
+              }
+          }
+      }
+  }
+}
+
+// 分别设置 list 样式
+.product-list {
+  margin-bottom: 10px;
+  .product-wrapper {
+      padding: 10px;
+      overflow: hidden;
+      border: 1px solid #f1f1f1;
+      //background-color: #f5f5f5;
+      .product-image {
+          position: relative;
+          float: left;
+          width: 200px;
+          padding: 0;
+      }
+      .product-info {
+          margin-left: 215px;
+          padding: 0;
+
+          text-align: left;
+
+          border-top: none;
+          .product-name {
+              height: auto;
+          }
+          .product-description {
+              display: block;
+          }
+      }
+  }
+}

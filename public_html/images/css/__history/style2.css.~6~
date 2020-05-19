@@ -1,0 +1,75 @@
+body{
+	background-color:#fff;
+	margin:0px auto;
+}
+a {
+	text-decoration: none;
+}
+.hc-top {
+    background: none repeat scroll 0 0 #000;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    font-size: 12px;
+    height: 24px;
+    padding-top: 8px;
+    text-align: left;
+}
+.hc-top a {
+    color: #999;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.hc-top a:hover {
+    color: #999;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.hc-nav {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #fff;
+    color: #000;
+    font-size: 12px;
+    height: 24px;
+    padding-top: 8px;
+    text-align: left;
+}
+.hc-nav a {
+    color: #999;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.hc-nav a:hover {
+    color: #999;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.hc-bottom {
+    background: none repeat scroll 0 0 #000;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    font-size: 12px;
+    height: 24px;
+    padding-top: 8px;
+    text-align: left;
+}
+.hc-bottom a {
+    color: #999;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.hc-bottom a:hover {
+    color: #999;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.hc-min-width {
+    width: 1200px;
+	margin:0px auto;
+}
+.pull-left:{float:left;}
+.clear {
+	clear: both;
+}
+.copyright {
+	text-align: center;
+}

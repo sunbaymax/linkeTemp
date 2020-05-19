@@ -1,0 +1,153 @@
+//==========主要颜色定义==========
+$main_color: #0b5ead;
+$secondary_color: #f23534;
+$page_bg_color: #fff;
+$default_font_color: #2e2e2e;
+$a_color: #2e2e2e;
+$a_color_hover: $secondary_color;
+$h_color: $main_color;
+$main_menu_bg_color: $main_color;
+$main_menu_font_color: #fff;
+$main_menu_font_color_hover: #fff;
+
+//==========h1, h2, h3, h4 定义==========
+$h2_color: $main_color;
+$h2_border_bottom: 4px solid #eee;
+
+//==========button 定义==========
+$btn_default_color: #fff;
+$btn_default_color_hover: #fff;
+$btn_default_border_color: $secondary_color;
+$btn_default_border_color_hover: $btn_default_border_color - 20;
+$btn_default_bg_color: $btn_default_border_color;
+$btn_default_bg_color_hover: $btn_default_border_color_hover;
+
+$btn_primary_color: #fff;
+$btn_primary_color_hover: #fff;
+$btn_primary_border_color: $main_color;
+$btn_primary_border_color_hover: $secondary_color;
+$btn_primary_bg_color: $btn_primary_border_color;
+$btn_primary_bg_color_hover: $btn_primary_border_color_hover;
+
+$btn_info_color: #fff;
+$btn_info_color_hover: #fff;
+$btn_info_border_color: $main_color;
+$btn_info_border_color_hover: $secondary_color;
+$btn_info_bg_color: $btn_info_border_color;
+$btn_info_bg_color_hover: $btn_info_border_color_hover;
+$btn_search:$main_color;
+//==========页头 Page Top 定义==========
+$page_top_color: #999;
+
+//==========Header （logo, search, cart） 定义==========
+$header_search_input_border: 1px solid $main_color;
+$header_cart_icon_i_bg_color: $secondary_color;
+$header_cart_content_border: 1px solid #f1f1f1;
+
+//==========导航菜单 main menu 定义==========
+$main_menu_height: 46px;
+$main_menu_wrapper_bg_color: $main_color;
+$main_menu_wrapper_bg_color_mobile: transparent;
+$main_menu_bg_color: transparent;
+$main_menu_bg_color_mobile: $main_color + 20;
+$menu_item_hover_bg_color: $secondary_color;
+$menu_item_arrow_status: true; //true/false
+$menu_item_arrow_color: #fff;
+$menu_item_padding_left_right: 20px;
+$menu_dropdown_bg_color: #fff;
+$menu_dropdown_border: 1px solid #f1f1f1;
+$menu_dropdown_item_color: $a_color;
+$menu_dropdown_item_color_hover: $secondary_color;
+$menu_dropdown_item_bg_color_hover: #f1f1f1;
+$menu_dropdown_item_border: 1px solid #f1f1f1;
+$main_menu_mobile_toggle_height: 48px;
+
+//==========Footer 定义==========
+$footer_bg_color: #f5f5f5;
+$footer_top_border: 4px solid $main_color;
+$footer_title_color: #666;
+$footer_link_color: #666;
+$footer_link_color_hover: $secondary_color;
+$footer_contact_span_border: 1px solid $secondary_color;
+$footer_scroll_top_bg_color: $main_color;
+$footer_scroll_top_bg_color_hover: $secondary_color;
+
+//==========owl-carousel 定义 - slideshow (单张)==========
+$slideshow_nav_width: 26px;
+$slideshow_nav_height: 50px;
+$slideshow_nav_bg_color: #999;
+$slideshow_nav_bg_color_hover: $secondary_color;
+$slideshow_nav_color: #fff;
+$slideshow_dot_bg_color: #fff;
+$slideshow_dot_bg_color_active: $secondary_color;
+
+//==========owl-carousel 定义 - carousel (多张)==========
+$carousel_nav_width: 30px;
+$carousel_nav_height: 30px;
+$carousel_nav_bg_color: #999;
+$carousel_nav_bg_color_hover: $secondary_color;
+$carousel_nav_color: #fff;
+$carousel_dot_bg_color: #eee;
+$carousel_dot_bg_color_active: $secondary_color;
+
+//==========产品列表定义 - grid==========
+$product_grid_border: 1px solid transparent;
+$product_grid_border_color_hover: #eee;
+$product_grid_product_info_border_top: 2px solid #eee;
+$product_grid_product_info_bg_color_hover: #f8f8f8;
+$product_grid_btn_bg_color: #fff;
+$product_grid_btn_border_color: #ddd;
+$product_grid_btn_color: #333;
+$product_grid_btn_bg_color_hover: $secondary_color;
+$product_grid_btn_color_hover: #fff;
+$product_grid_btn_border_color_hover: $product_grid_btn_bg_color_hover;
+$product_name_color: $default_font_color;
+$product_name_color_hover: $main_color;
+$product_price_color: $secondary_color;
+
+//==========产品详情页定义 product.tpl==========
+$product_thumbnail_gallery_img_border: 1px solid #eaeaea;
+$product_thumbnail_gallery_img_active_border: 1px solid #c81623;
+$product_wishlist_share_i_color: $secondary_color;
+$product_price_new_color: #e4393c;
+$product_h1_color: $main_color;
+$product_h1_font_size: 20px;
+
+$product_add_to_cart_color: #fff;
+$product_add_to_cart_bg_color: #b51d1a;
+$product_add_to_cart_border: 1px solid #b51d1a;
+$product_add_to_cart_hover_color: #fff;
+$product_add_to_cart_hover_bg_color: $product_add_to_cart_bg_color - 20;
+$product_add_to_cart_hover_border: 1px solid $product_add_to_cart_bg_color - 20;
+
+$product_buy_now_color: #fff;
+$product_buy_now_bg_color: #958459;
+$product_buy_now_border: 1px solid $product_buy_now_bg_color;
+$product_buy_now_hover_color: #fff;
+$product_buy_now_hover_bg_color: #b51d1a;
+$product_buy_now_hover_border: 1px solid #b51d1a;
+
+//==========NAV TABS==========
+$nav_tabs_bg_color: #F7F7F7;
+$nav_tabs_border_top: 2px solid $main_color;
+$nav_tabs_border_right: 1px solid #dedfde;
+$nav_tabs_border_bottom: 1px solid #dedfde;
+$nav_tabs_border_left: 1px solid #dedfde;
+$nav_tabs_active_border_top: 2px solid $secondary_color;
+$tab_content_border_top: none;
+$tab_content_border_right: 1px solid #dedfde;
+$tab_content_border_bottom: 1px solid #dedfde;
+$tab_content_border_left: 1px solid #dedfde;
+
+//========== PAGINATION ==========
+$page_item_color: #333;
+$page_item_bg_color: #fff;
+$page_item_border: 1px solid #eee;
+$page_item_color_active: #fff;
+$page_item_bg_color_active: $main_color;
+$page_item_border_color_active: $main_color;
+
+//========== MODULE ==========
+$module_widget_title_border_bottom: 3px solid #e5e5e5;
+$module_widget_title_span_bg_color: $secondary_color;
+$module_widget_title_span_border_bottom: 3px solid $module_widget_title_span_bg_color - 20;

@@ -1,0 +1,31 @@
+body{
+	background-color:#fff;
+	margin:0px auto;
+}
+a {
+	text-decoration: none;
+}
+.hc-top {
+    background: none repeat scroll 0 0 #000;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    font-size: 12px;
+    height: 24px;
+    padding-top: 8px;
+    text-align: left;
+}
+.hc-top a {
+    color: #999;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.hc-top a:hover {
+    color: #999;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.hc-min-width {
+    width: 1200px;
+	margin:0px auto;
+}
+.pull-left:{float:left;}

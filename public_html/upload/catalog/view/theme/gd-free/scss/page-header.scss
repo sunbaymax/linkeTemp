@@ -1,0 +1,107 @@
+header {
+  // padding: 20px 0;
+  background-color: #fff;
+
+  @media (max-width: 767px) {
+    // padding: 20px 0;
+  }
+  .dropdown-toggle {
+    background-color: transparent;
+  }
+
+  #logo {
+    // height: 80px;
+    img {
+      display: inline-block;
+      padding: 10px 0 0 0;
+      @media (max-width: 767px) {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+
+      }
+    }
+  }
+
+
+  .mini-cart {
+    margin-top: 40px;
+    text-align: right;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  //购物车
+  #cart {
+    display: inline-block;
+    position: relative;
+    @media (max-width: 960px) {
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    a {
+      color: $a_color;
+      font-size: 12px;
+      font-weight: 700;
+
+      &:focus {
+        outline: 0;
+        text-decoration: none;
+      }
+    }
+
+    &:hover {
+      .cart-content {
+        display: block;
+      }
+    }
+    .cart-icon {
+      display: inline-block;
+      margin-right: 10px;
+
+      i {
+        padding: 8px;
+        //border: 1px solid #000;
+        // @include border-radius(50px);
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        background-color: $main_color;
+        color: #fff;
+
+      }
+    }
+
+    #cart-total {
+      &:after {
+        font-family: 'FontAwesome';
+        content: "\f078";
+        margin-left: 10px;
+      }
+    }
+
+    .cart-content {
+      margin: 0;
+      padding: 20px;
+      right: 0;
+      left: auto;
+      min-width: 300px;
+      border: $header_cart_content_border;
+      @include border-radius(0);
+
+      .remove {
+        cursor: pointer;
+      }
+
+      .empty {
+        text-align: center;
+        margin: 0;
+        padding: 30px 20px;
+      }
+    }
+  }
+}

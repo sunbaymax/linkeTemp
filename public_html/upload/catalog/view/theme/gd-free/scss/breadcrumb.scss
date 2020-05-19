@@ -1,0 +1,27 @@
+.breadcrumb {
+  overflow: hidden;
+  // margin: 20px 0 0 0;
+  // margin-bottom: none;
+  padding: 0;
+  //border: 1px solid #ddd;
+  background-color: transparent;
+  i {
+    font-size: 15px;
+  }
+
+  li {
+    position: relative;
+    white-space: nowrap;
+    a {
+      color: #828282;
+    }
+
+    & + li {
+      &:before {
+        content: "/";
+        padding: 0 5px;
+        color: #cccccc;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.product-manufacturer {
+  .row {
+    #content {
+      h1 {
+        margin-bottom: 15px;
+      }
+      .manufacturer-list {
+       @media (max-width: 767px) {
+          display: none;
+        }
+        width: 100%;
+        display: inline-block;
+        border-bottom: 1px solid $secondary_color;
+        border-top: 1px solid $secondary_color;
+        padding: 0;
+        margin-bottom: 30px;
+        li {
+          list-style-type: none;
+          float: left;
+          margin-left: 10px;
+          &:hover {
+            background-color: $secondary_color;
+          }
+          a {
+            display: inline-block;
+            padding: 5px 20px;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+      h2 {
+        margin-top: 0;
+      }
+    }
+    .row {
+      .col-md-2 {
+        .manufacturer-link {
+          text-align: center;
+          a {
+            display: inline-block;
+            margin-bottom: 25px;
+            .manufacturer-name {
+              margin-top: 15px;
+              white-space: nowrap
+            }
+          }
+        }
+      }
+    }
+  }
+}

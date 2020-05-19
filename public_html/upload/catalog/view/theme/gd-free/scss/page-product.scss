@@ -1,0 +1,462 @@
+.product-detail {
+  .elevate-zoom-wrapper{
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .elevate-zoom-preview{
+    text-align: center;
+
+    a {
+      img {
+        display: inline-block;
+      }
+    }
+  }
+
+  #product-thumbnail-gallery{
+    margin: 10px 0 0 0;
+    text-align: center;
+
+    @media (max-width: 767px) {
+      text-align: left;
+    }
+
+    a{
+      display: inline-block;
+      margin-top: 10px;
+      border: 1px solid #eaeaea;
+
+      &.active {
+        border: 1px solid $main_color;
+      }
+    }
+  }
+
+  .wishlist-share {
+    padding: 0 0 5px;
+
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+
+    a {
+      padding: 0 5px;
+      cursor: pointer;
+      i {
+        color:#777;
+      }
+    }
+  }
+
+  .product-info {
+    h1{
+      margin: 0 0 20px 0;
+      font-size: $product_h1_font_size;
+      font-weight: 700;
+      line-height: 1.5em;
+      color: $product_h1_color;
+    }
+
+    .product-brief-wrapper {
+      margin: 0;
+      padding: 10px;
+      overflow: hidden;
+      background-color: #f5f5f5;
+
+      li {
+        list-style: none;
+
+        span {
+          width: 20%;
+          display: inline-block;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .product-price-wrapper {
+      overflow: hidden;
+      margin: 20px 0;
+
+      span {
+        display: inline-block;
+      }
+
+      .price-new {
+        margin-right: 10px;
+        font-size: 30px;
+        line-height: 34px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .price-old {
+        font-size: 14px;
+        text-decoration: line-through;
+        color: #999;
+        font-weight: bold;
+      }
+
+      .price-tax {
+        display: block;
+      }
+    }
+
+    .product-discount-wrapper {
+      span {
+        display: block;
+      }
+    }
+
+    #product {
+      // 商品选项 radio 和 checkbox 样式修改
+      .radio, .checkbox {
+        display: inline-block;
+        margin: 0;
+        font-size: 12px;
+        cursor: pointer;
+
+        input {
+          display: none;
+
+          &:checked + span {
+            border: 1px solid $main_color;
+
+            &:after {
+              content:" ";
+              background: url('../image/checked.png') no-repeat;
+              bottom: 0px;
+              height: 13px;
+              overflow: hidden;
+              position: absolute;
+              right: 0px;
+              text-indent: -9999em;
+              width: 13px;
+            }
+          }
+        }
+
+        span {
+          display: block;
+          position: relative;
+          padding: 4px 5px;
+          text-align: center;
+          border: 1px solid #ddd;
+        }
+      }
+
+      .product-cart-action {
+        margin-bottom: 15px;
+
+        .quantity-input-wrapper {
+          //display: inline-block;
+          float: left;
+          margin-right: 10px;
+          margin-bottom: 0;
+          width: 10%;
+          min-width: 80px;
+          position: relative;
+
+          a {
+            display: block;
+            width: 20px;
+            height: 16px;
+            position: absolute;
+            right: 1px;
+            line-height: 16px;
+            text-align: center;
+            background: #f1f1f1;
+            border-left: 1px solid #ccc;
+
+            &.quantity-up {
+              top: 1px;
+              border-bottom: none;
+              border-bottom: 1px solid #ccc;
+            }
+
+            &.quantity-down {
+              top: 17px;
+            }
+          }
+        }
+
+        .input-quantity1 {
+          float: left;
+          width: 10%;
+          min-width: 50px;
+          margin-right: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .nav-tabs {
+    margin-top: 30px;
+  }
+
+  .tab-content {
+    img {
+      max-width: 100%;
+    }
+
+    #form-review {
+      h2 {
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: bold;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+
+
+//================
+#product1 {
+  .product-info {
+    overflow: hidden;
+
+    h1{
+      margin: 10px 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5em;
+      color: #666;
+    }
+
+    ul {
+      li {
+        margin: 5px 0;
+
+        i {
+          color: #fff;
+          background-color: #55c65e;
+          padding: 3px;
+          text-align: center;
+          border-radius: 100%;
+          float: left;
+          font-size: 7px;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+     // 加入购物车/收藏/对比 按钮
+    .product-action{
+      margin: 30px 0;
+      overflow: hidden;
+      display: none;
+
+      .label-qty{
+        line-height: 34px;
+        padding-right: 15px;
+      }
+
+      .quantity-input {
+        input {
+          min-width: 70px;
+          overflow: hidden;
+          text-align: center;
+          border-radius: 0;
+          border: 1px solid #e5e5e5;
+          box-shadow: none;
+          height: 35px;
+        }
+      }
+
+      .add-action {
+        display: block;
+        width: 20px;
+        position: relative;
+        cursor: pointer;
+        font-size: 7px;
+        line-height: 16px;
+        text-align: center;
+        border-style: solid;
+        border-color: #d7d7d7;
+        background: #f3f4f5;
+      }
+
+      .add-up {
+        border-width: 1px 1px 1px 0;
+      }
+
+      .add-down {
+        border-width: 0 1px 1px 0;
+      }
+
+      .product-add-to-cart {
+        button {
+          margin-left: 10px;
+          padding: 6px 20px;
+          height: 35px;
+          color: $product_add_to_cart_color;
+          background-color: $product_add_to_cart_bg_color;
+          border: $product_add_to_cart_border;
+
+          &:hover {
+            color: $product_add_to_cart_hover_color;
+            background-color: $product_add_to_cart_hover_bg_color;
+            border: $product_add_to_cart_hover_border;
+          }
+        }
+      }
+
+      .product-buy-now {
+        @media (max-width: 767px) {
+          display: none;
+        }
+        button {
+          margin-left: 10px;
+          padding: 6px 20px;
+          height: 35px;
+          color: $product_buy_now_color;
+          background-color: $product_buy_now_bg_color;
+          border: $product_buy_now_border;
+
+          &:hover {
+            color: $product_buy_now_hover_color;
+            background-color: $product_buy_now_hover_bg_color;
+            border: $product_buy_now_hover_border;
+          }
+        }
+
+      }
+
+      .product-wishlist-compare {
+        clear: both;
+        padding: 10px 0 0 0;
+
+        a {
+          padding-right: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .price-info{
+    margin-top: 20px;
+
+    .price{
+      font-size: 24px;
+      color: $main_color;
+      font-weight: bold;
+    }
+
+    .price-old{
+      margin-left: 10px;
+      font-size: 16px;
+      text-decoration: line-through;
+    }
+
+    .tax{
+      font-size: 14px;
+    }
+
+    hr {
+      border-top-style: dotted;
+    }
+  }
+
+  //Transform radio and checkbox into checkable blocks
+  .check-option {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #4b4b4b;
+    font-size: 12px;
+    cursor: pointer;
+
+    input {
+      display: none;
+
+      &:checked + span {
+        border: 1px solid #a10000;
+
+        &:after {
+          content:" ";
+          background: url('../image/checked.png') no-repeat;
+          bottom: 0px;
+          height: 13px;
+          overflow: hidden;
+          position: absolute;
+          right: 0px;
+          text-indent: -9999em;
+          width: 13px;
+        }
+      }
+    }
+
+    span {
+      display: block;
+      position: relative;
+      padding: 4px 5px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+  }
+
+  .has-error {
+    .check-option {
+      span {
+        border: 1px dotted #a10000;
+      }
+    }
+  }
+
+  .nav-tabs {
+    margin-top: 15px;
+    border-top: $nav_tabs_border_top;
+    border-right: $nav_tabs_border_right;
+    border-bottom: $nav_tabs_border_bottom;
+    border-left: $nav_tabs_border_left;
+    background-color: $nav_tabs_bg_color;
+
+    li {
+      a {
+        padding: 8px 15px;
+        border-radius: 0;
+        font-size: 14px;
+        color: #666;
+
+        &:hover{
+          border-radius: 0;
+
+        }
+      }
+
+      &.active>a, &.active>a:focus, &.active>a:hover{
+        margin-top: -5px;
+        margin-left: -1px;
+        height: 43px;
+        line-height: 24px;
+        border-radius: 0;
+        border-top: $nav_tabs_active_border_top;
+        border-bottom: none;
+
+      }
+
+    }
+  }
+
+  .tab-content {
+    padding: 10px;
+    border-top: $tab_content_border_top;
+    border-right: $tab_content_border_right;
+    border-bottom: $tab_content_border_bottom;
+    border-left: $tab_content_border_left;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  #tab-review {
+    h2{
+      margin: 15px 0;
+      font-size: 16px;
+    }
+  }
+}

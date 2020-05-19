@@ -1,0 +1,263 @@
+/* 页面属性 */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: "Arial";
+	color: #333333;
+}
+/* 滚动条属性 */
+BODY {
+	SCROLLBAR-FACE-COLOR: #FFFFFF;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #ACACAC;
+	SCROLLBAR-3DLIGHT-COLOR: #ACACAC;
+	SCROLLBAR-ARROW-COLOR: #ACACAC;
+	SCROLLBAR-TRACK-COLOR: #EFEFEF;
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-BASE-COLOR: #FFFFFF
+}
+/* 浏览器默认链接属性 */
+A:link {
+	text-decoration: none;
+	color: #333333
+}
+A:visited {
+	text-decoration: none;
+	color: #333333
+}
+A:hover {
+	text-decoration: none;
+	text-decoration: underline;
+	color: #ff6600
+}
+TR {
+	FONT-SIZE: 9pt;
+	FONT-FAMILY: "??";
+}
+TD {
+	FONT-SIZE: 9pt;
+	line-height: 18px;
+FONT-FAMILY: ??;
+}
+/* 浏览器其他链接属性 */
+A.lj01:link {
+	font-family: "Arial";
+	font-size: 11pt;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #149BD0
+}
+A.lj01:visited {
+	font-family: "Arial";
+	font-size: 11pt;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #149BD0
+}
+A.lj01:hover {
+	font-family: "Arial";
+	font-size: 11pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ff6600
+}
+A.lj02:link {
+	text-decoration: none;
+	text-decoration: underline;
+	color: #0240A3
+}
+A.lj02:visited {
+	text-decoration: none;
+	text-decoration: underline;
+	color: #0240A3
+}
+A.lj02:hover {
+	text-decoration: none;
+	text-decoration: underline;
+	color: #ff6600
+}
+A.lj03:link {
+	text-decoration: none;
+	color: #252525
+}
+A.lj03:visited {
+	text-decoration: none;
+	color: #252525
+}
+A.lj03:hover {
+	text-decoration: none;
+	color: #0240A3
+}
+/* 按钮属性 */
+.button01 {
+	BORDER-RIGHT: #999999 1px solid;
+	BORDER-TOP: #999999 1px solid;
+	FONT-SIZE: 9pt;
+	BACKGROUND: url(img/button_bg.gif) #ffffff fixed no-repeat left 50%;
+	BORDER-LEFT: #999999 1px solid;
+	CURSOR: hand;
+	LINE-HEIGHT: 20px;
+	BORDER-BOTTOM: #999999 1px solid;
+	HEIGHT: 22px
+}
+.button02 {
+	font-family: "??";
+	font-size: 9pt;
+	height: 18px;
+	border: 1px #000000 solid;
+	background-color: #DEDEDE
+}
+.button3 {
+	background-color: #c40000;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 44px;
+    letter-spacing: 4px;
+    right: 0;
+    top: 0;
+    width: 90px;
+}
+/* 文本输入框属性 */
+.input {
+	font-size: 9pt;
+	background-color: #F5FAFC;
+	border: #A4CCE5;
+	border-style: solid;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	font-family: "Arial"
+}/* 无框填写框 */
+.input_dh {
+	font-family: "Arial";
+	font-size: 9pt;
+	height: 18px;
+	border: 1px #999999 solid;
+	background-color: #FFFFFF
+}/* 单行填写框 */
+.input_dhxx {
+	BORDER-RIGHT: #999999 1px dotted;
+	BORDER-TOP: #999999 1px dotted;
+	FONT-SIZE: 9pt;
+	BORDER-LEFT: #999999 1px dotted;
+	COLOR: #333333;
+	BORDER-BOTTOM: #999999 1px dotted;
+	FONT-FAMILY: "宋体"
+}/* 单行虚线填写框 */
+.input_duoh {
+	font-family: "Arial";
+	font-size: 9pt;
+	border: 1px #333333 solid;
+	background-color: #FFFFFF
+}/* 多行填写框 */
+/* 字体属性 */
+.wz_copyright {
+	font-size: 9pt;
+	font-weight: bold;
+	color: #EAEFF4
+}
+.wz_copyright2 {
+	font-size: 9pt;
+	font-weight: bold;
+	color: #314F77
+}
+.wz01 {
+	font-size: 9pt;
+	color: #0240A3
+}
+.wz02_bt {
+	font-size: 10pt;
+	font-weight: bold;
+	color: #5D82B1
+}
+
+.blank01 {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px
+}/* 表格上下左右边距设定 */
+/* 图片边框属性 */
+.pic {
+	border-color: #959595;
+	border: 1px #E9FAE3 solid;
+}
+.left {
+	font-size:14px;
+	width: 200px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.left img {
+   padding-left:10px;
+	padding-right:10px;
+}
+
+.left .head1 {
+	background-color: #E4EEFF;
+	font-size: 16px;
+	color:#fff;
+}
+.menu {
+	border: solid 1px #95B8E7;
+	width: 200px;
+}
+.head2 {
+	padding-left: 10px;
+}
+.head3 {
+	padding-left: 20px;
+}
+.attr {
+	background-color: #E9F1FF;
+	width:500px;
+}
+#color_desc div{
+  float:left;width:300px;border:1px;margin:10px;
+}
+.level_1 {font-weight:bold;color:#ff0000;}
+.level_2 {font-weight:bold;color:#CCCCCC;}
+.level_3 {font-weight:bold;color:#FFFF00;}
+.level_4 {font-weight:bold;color:#00FF00;}
+.level_5 {font-weight:bold;color:#00FFFF ;}
+.level_6 {font-weight:bold;color:#0000FF ;}
+.level_7 {font-weight:bold;color:#871F78;}
+.level_8 {font-weight:bold;color:#FF7F00;}
+#graph {color:#f00;padding:20px;}
+
+.tableBorder {
+	margin:10px;
+	border:solid 1px #95B8E7;
+	width:100%;
+}
+.tableBorder caption {
+	text-align:left;
+	background-color:#E6F0FF;
+	color:#0E2D5F;	
+	padding:5px;
+	font-weight:bold;
+	border-top:solid 1px #95B8E7;
+	border-left:solid 1px #95B8E7;
+	border-right:solid 1px #95B8E7;
+}
+.tableBorder td{
+	background-color:#fff;
+	border-bottom:dotted 1px #F3F3F3;
+	border-right:dotted 1px #F3F3F3;
+	padding:2px;
+}
+.tableBorder th{
+	background-color:#F4F4F4;
+	color:#000;
+	font-weight:normal;
+	border:dotted 1px #F3F3F3;
+	padding:2px;
+}
+.tableBorder tr:hover{
+	background-color:#EAF2FF;
+}

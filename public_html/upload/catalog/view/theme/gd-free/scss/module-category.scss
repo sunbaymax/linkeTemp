@@ -1,0 +1,47 @@
+.category-list {
+  margin: 0;
+  padding: 10px 20px;
+
+  li {
+    line-height: 28px;
+
+    &.active {
+      & > a, & > span:before {
+        color: #333;
+      }
+    }
+  }
+
+  & > li {
+    & > span:before {
+      content: "\f0da";
+      font-size: 14px;
+      display: inline-block;
+      text-align: right;
+      font-family: "FontAwesome";
+      padding-right: 10px;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    & > ul {
+      padding-left: 15px;
+
+      & > li {
+        border-bottom: 1px dotted #eaeaea;
+        & > span:before {
+          content: "\f105";
+          font-size: 14px;
+          display: inline-block;
+          text-align: right;
+          color: #ccc;
+          font-family: "FontAwesome";
+          padding-right: 10px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

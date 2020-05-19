@@ -1,0 +1,26 @@
+//sidebar css
+.list-group-item:first-child, .list-group-item:last-child{
+  border-radius: 0 !important;
+}
+
+.tab-container{
+  position: relative;
+
+  .tab-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .active {
+    opacity: 1;
+    visibility: inherit;
+    position: inherit;
+    -vendor-animation-duration: 0.3s;
+    -vendor-animation-delay: 1s;
+    -vendor-animation-iteration-count: infinite;
+  }
+}
