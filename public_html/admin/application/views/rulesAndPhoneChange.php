@@ -52,7 +52,7 @@
           <td width="20%" align="right">短信报警监听内容:</td>
           <td width="80%" style="PADDING-LEFT:10px">
               <?php 
-                  $arr_alert = array('温度','湿度','电压','颗粒物PM2.5','颗粒物PM10','负氧离子数量','有机污染物(甲醛)','空气质量等级','断网');
+                  $arr_alert = array('温度','湿度','电压','断网');
                   if (isset($row->alert_content) && ! empty($row->alert_content)) {
                     $content = str_split($row->alert_content);
                     for($i=0; $i<count($arr_alert); $i++) {
@@ -115,7 +115,7 @@
           <th>三路报警</th>
           <th>电压下限</th>
           <th>电压上限</th>
-          <th>四路报警</th>
+         <!--  <th>四路报警</th>
           <th>颗粒物PM2.5下限</th>
           <th>颗粒物PM2.5上限</th>
           <th>五路报警</th>
@@ -129,7 +129,7 @@
           <th>有机污染物(甲醛)上限</th>
           <th>八路报警</th>
           <th>空气质量等级下限</th>
-          <th>空气质量等级上限</th>
+          <th>空气质量等级上限</th> -->
           <th>断网报警</th>
           <th>断网时长</th>
           <th>入库时间</th>
@@ -166,7 +166,7 @@
           <td align="center"><?php if ($row->alert_3 == 1) echo '是'; else echo '否'?></td>
           <td align="center"><?php echo $row->min_3;?></td>
           <td align="center"><?php echo $row->max_3;?></td>
-          <td align="center"><?php if ($row->alert_4 == 1) echo '是'; else echo '否'?></td>
+          <!-- <td align="center"><?php if ($row->alert_4 == 1) echo '是'; else echo '否'?></td>
           <td align="center"><?php echo $row->min_4;?></td>
           <td align="center"><?php echo $row->max_4;?></td>
           <td align="center"><?php if ($row->alert_5 == 1) echo '是'; else echo '否'?></td>
@@ -180,7 +180,7 @@
           <td align="center"><?php echo $row->max_7;?></td>
           <td align="center"><?php if ($row->alert_8 == 1) echo '是'; else echo '否'?></td>
           <td align="center"><?php echo $row->min_8?></td>
-          <td align="center"><?php echo $row->max_8;?></td>
+          <td align="center"><?php echo $row->max_8;?></td> -->
           <td align="center"><?php if ($row->is_active == 1) echo '是'; else echo '否'?></td>
           <td align="center"><?php echo $row->active_timeout;?></td>
           <td align="center"><?php echo $row->add_time;?></td>        

@@ -50,7 +50,7 @@
                         }
                     ?>
                     </li>
-            		<li><?php echo img('public/images/icons/drive.png')    . anchor('member/set_jinghua', '我的空气净化器');?></li>
+            		<!-- <li><?php echo img('public/images/icons/drive.png')    . anchor('member/set_jinghua', '我的空气净化器');?></li> -->
 					<li><?php echo img('public/images/icons/index_07.png') . anchor('member/bjinfo', '我的警情');?></li>
 					<li><?php echo img('public/images/icons/index_09.png') . anchor('member/rulesAndPhoneChange', '我的报警规则设定');?></li>
 					<li><?php echo img('public/images/icons/index_12.png') . anchor('member/bjSMSSend', '我的报警短信下发日志');?></li>
@@ -68,6 +68,8 @@
 					onclick="select_check('alert_2');" /> <span class="level_2">湿度</span>
 				<input type="checkbox" id="alert_3"
 					onclick="select_check('alert_3');" /> <span class="level_3">电压</span>
+				<div style="display:none">
+			
 				<input type="checkbox" id="alert_4"
 					onclick="select_check('alert_4');" /> <span class="level_4">颗粒物PM2.5</span>
 				<input type="checkbox" id="alert_5"
@@ -78,6 +80,7 @@
 					onclick="select_check('alert_7');" /> <span class="level_7">有机污染物(甲醛)</span>
 				<input type="checkbox" id="alert_8"
 					onclick="select_check('alert_8');" /> <span class="level_8">空气质量等级</span>
+					</div>
 				<input type="hidden" id="order_type" name="order_type" value="0" />
 				<br /> <br /> 显示方式：<input type="radio" id="show_type"
 					name="show_type" value="0" checked="checked" onclick="show_data();" />

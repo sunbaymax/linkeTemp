@@ -52,7 +52,7 @@
                         }
                     ?>
                     </li>
-            		<li><?php echo img('public/images/icons/drive.png')    . anchor('member/set_jinghua', '我的空气净化器');?></li>
+            		<!-- <li><?php echo img('public/images/icons/drive.png')    . anchor('member/set_jinghua', '我的空气净化器');?></li> -->
 					<li><?php echo img('public/images/icons/index_07.png') . anchor('member/bjinfo', '我的警情');?></li>
 					<li><?php echo img('public/images/icons/index_09.png') . anchor('member/rulesAndPhoneChange', '我的报警规则设定');?></li>
 					<li><?php echo img('public/images/icons/index_12.png') . anchor('member/bjSMSSend', '我的报警短信下发日志');?></li>
